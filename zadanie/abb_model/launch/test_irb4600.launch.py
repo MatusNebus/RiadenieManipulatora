@@ -26,7 +26,7 @@ def generate_launch_description():
                     'xacro ', PathJoinSubstitution([
                         FindPackageShare('abb_model'),
                         'urdf', 'abb_irb4600_60_205.xacro'
-                    ])
+                    ])  
                 ])
             }]
         ),

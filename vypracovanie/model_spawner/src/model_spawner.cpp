@@ -46,10 +46,11 @@ private:
     marker.pose.orientation.z = 0.70710678;
     marker.pose.orientation.w = 0.70710678;
 
-    // The STL appears to be authored in millimeters, so scale it down to meters.
-    marker.scale.x = 1; //0.001;
-    marker.scale.y = 1; //0.001;
-    marker.scale.z = 1; //0.001;
+    // The mesh bounding box is already around 1.35 x 1.44 x 1.38 units,
+    // so keeping unit scale makes it visible in RViz.
+    marker.scale.x = 1.0;
+    marker.scale.y = 1.0;
+    marker.scale.z = 1.0;
 
     marker.color.r = 0.85F;
     marker.color.g = 0.85F;
